@@ -51,3 +51,11 @@ Pandas`
 
 `conda env create -f env/environment.yml`
 `conda activate vs-env`
+
+
+## Extensions and Patches
+
+In addition to the two core steps, this pipeline can be extended with optional modules that can be patched in depending on project needs. For example:
+#### Alternative rescoring functions – swap in custom scoring schemes (e.g., physics-based rescoring, ML models) to enrich hit quality.
+#### Post-clustering analyses – add downstream checks such as RMSD-based pose convergence across clusters, or substructure-driven RMSD filtering.
+These extensions can be incorporated as separate scripts or functions that plug into the Step 02 → Step 03 workflow. They are not required for the basic pipeline but can further increase selectivity and robustness of hit triaging.
