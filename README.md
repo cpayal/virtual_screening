@@ -49,5 +49,5 @@ Pandas`
 
 (Optional) create with conda:
 
-conda env create -f env/environment.yml
-conda activate vs-env
+`conda env create -f env/environment.yml`
+`conda activate vs-env`
