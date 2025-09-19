@@ -8,11 +8,16 @@ Our hits are only as good as how we select them! Ultra-large virtual screening c
 
 This workflow addresses that by introducing multiple layers of decision-making beyond raw scores:
 
-- #### Rescoring and normalization : Docking or LGFE scores are scaled and re-evaluated to reduce bias from different scoring functions.
-- #### Best-pose selection : Among multiple poses per ligand, the most consistent and representative conformations are chosen.
-- #### Pose convergence checks: Ensures that clusters of ligands bind in a reproducible way, filtering out unstable or artifactual poses.
-- #### Physicochemical filters: Removes compounds unlikely to succeed due to poor drug-like properties.
-- #### Clustering and substructure tagging: Promotes chemical diversity and helps retain structurally meaningful representatives.
+- #### Rescoring and normalization :
+  Docking or LGFE scores are scaled and re-evaluated to reduce bias from different scoring functions.
+- #### Best-pose selection :
+  Among multiple poses per ligand, the most consistent and representative conformations are chosen.
+- #### Pose convergence checks:
+  Ensures that clusters of ligands bind in a reproducible way, filtering out unstable or artifactual poses.
+- #### Physicochemical filters:
+  Removes compounds unlikely to succeed due to poor drug-like properties.
+- #### Clustering and substructure tagging:
+  Promotes chemical diversity and helps retain structurally meaningful representatives.
 
 By combining these steps, the workflow emphasizes convergence, drug-likeness, and diversity, giving higher confidence that the selected hits will be experimentally validated.
 
